@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Социальный фонд - Контакты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <span>Социальный фонд</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="services.html"><i class="fas fa-hand-holding-heart"></i> Услуги</a></li>
+                    <li><a href="contacts.html" class="active"><i class="fas fa-address-book"></i> Контакты</a></li>
+                    <li><a href="help.html"><i class="fas fa-question-circle"></i> Помощь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>Свяжитесь с нами любым удобным способом. Мы всегда готовы помочь и ответить на ваши вопросы.</p>
+            </div>
+        </section>
+
+        <!-- Основной контент -->
+        <div class="container">
+            <div class="contacts-container">
+                <!-- Контактная информация -->
+                <section class="content-section contact-info">
+                    <h2>Наши контакты</h2>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Победы, 15</p>
+                            <p>Ближайшее метро: "Парк Победы"</p>
+                            <p>Часы работы: Пн-Пт 9:00-18:00</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Телефоны</h3>
+                            <p>+7 (495) 123-45-67 - общий</p>
+                            <p>+7 (495) 123-45-68 - горячая линия</p>
+                            <p>+7 (495) 123-45-69 - юридический отдел</p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Электронная почта</h3>
+                            <p>info@socialfund.ru - общие вопросы</p>
+                            <p>help@socialfund.ru - запросы на помощь</p>
+                            <p>volunteer@socialfund.ru - для волонтеров</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Форма обратной связи -->
+                <section class="content-section contact-form-section">
+                    <h2>Напишите нам</h2>
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Тема обращения</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Выберите тему</option>
+                                    <option value="help">Запрос на помощь</option>
+                                    <option value="consultation">Консультация</option>
+                                    <option value="volunteer">Волонтерство</option>
+                                    <option value="donation">Пожертвование</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">Я согласен на обработку персональных данных *</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Отправить сообщение</button>
+                            <p class="form-note">* Поля, обязательные для заполнения</p>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Филиалы -->
+                <section class="content-section branches-section">
+                    <h2>Наши филиалы</h2>
+                    <div class="branches">
+                        <div class="branch">
+                            <h3>Центральный офис (Москва)</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Победы, 15</p>
+                            <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                            <p><i class="fas fa-clock"></i> Пн-Пт 9:00-18:00</p>
+                        </div>
+                        <div class="branch">
+                            <h3>Филиал в Санкт-Петербурге</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> г. Санкт-Петербург, Невский пр., 45</p>
+                            <p><i class="fas fa-phone"></i> +7 (812) 456-78-90</p>
+                            <p><i class="fas fa-clock"></i> Пн-Пт 10:00-17:00</p>
+                        </div>
+                        <div class="branch">
+                            <h3>Филиал в Екатеринбурге</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> г. Екатеринбург, ул. Ленина, 28</p>
+                            <p><i class="fas fa-phone"></i> +7 (343) 789-01-23</p>
+                            <p><i class="fas fa-clock"></i> Пн-Пт 9:00-17:00</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Социальный фонд</h3>
+                    <p>Мы помогаем людям в трудной жизненной ситуации с 2008 года.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Победы, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@socialfund.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="help.html">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Социальный фонд помощи. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
